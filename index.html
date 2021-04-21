@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Cinematics</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+      </style>
+    <style>
+      *{
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: bold;
+
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("media/film-1668918_1920.jpg");
+        background-size: 1620px;
+      }
+      .left img{
+          width:200px;
+          position: absolute;
+          top: 20px;
+      }
+      .left div{
+          position: relative;
+          top: 30px;
+          text-align: center;
+          margin-bottom: 0px;
+          color: white;
+      }
+      .left {
+        /* border: 4px solid pink; */
+        display: inline-block;
+        width: 20%;
+        position: absolute;
+        left: 34px;
+        top: 10px;
+        padding: 45px;
+
+        height: 10px;
+      }
+      .mid {
+        display: block;
+        margin: 10px auto;
+        /* border: 4px solid honeydew; */
+        width: 30%;
+        padding: 45px;
+        height: 15px;
+        
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 10px;
+        padding: 45px;
+        width: 20%;
+        height: 10px;
+        /* border: 4px solid salmon; */
+      }
+      .navbar{
+          display: inline-block;
+          width: fit-content;
+
+      }
+      .navbar li{
+          display: inline-block;
+          font-size: 17px;
+          
+      }
+      .navbar li a{
+          color: white;
+          text-decoration: none;
+          margin: auto 7px;
+          padding: -1px 10px;
+         
+      }
+      .navbar li a:hover{
+          color: hotpink;
+          text-decoration: underline;
+      }
+      .footer div{
+          position: fixed;
+          bottom: 25px;
+          right: 25px;
+      }
+      .btn{
+        background-color: black;
+        color: white;
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border-radius: 10px;
+        font-size: 12px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        align-self: auto;
+      }
+      .btn:hover{
+        background-color: violet;
+      }
+      .container{
+        margin: 34px 34px;
+        padding: 34px 40px;
+        /* border: 4px solid whitesmoke; */
+        color:seashell;
+        width: 33%;
+      }
+      #formbtn{
+        display: block;
+        width: 40%;
+        word-wrap: normal;
+        margin: auto;
+
+      }
+      .form-group input{
+        text-align: center;
+        display: block;
+        width: 207px;
+        padding: 6px;
+        border: 3px solid black;
+        margin: 10px auto;
+        border-radius: 10px;
+        font-family: 'Baloo Bhai 2', cursive;
+      }
+      .container h1 {
+        text-align: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <img src="media/logo.JPG" alt="">
+        <div></div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+        
+        <ul class="navbar">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Book A Shoot</a></li>
+         <li><a href="#">Gallery</a></li>
+         <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right box buttons -->
+      <div class="right">
+        <button class="btn">Work with us</button>
+        <button class="btn">Equipments</button>
+      </div>
+    </header>
+    <div class="container">
+
+      <h1>Book Now...</h1>
+      <form action="noaction.php" target="_blank">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Contact number">
+        </div>
+        <div class="form-group">
+          <input type="email" name="" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <input type="number" name="" placeholder="Number of people">
+        </div>
+        <button class="btn" id=formbtn>Proceed for payment</button>
+      </form>
+    </div>
+    <!-- <footer>
+        <div class="chat">
+            <input type="text" placeholder="Search">
+        </div>
+    </footer> -->
+  </body>
+</html>
